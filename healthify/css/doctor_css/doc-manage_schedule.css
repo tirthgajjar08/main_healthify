@@ -1,0 +1,272 @@
+
+.rightbar .box-style{
+    width:99.9%;
+    background-color:white;
+    border-radius: 10px 10px 0px 0px;
+    margin-top:1%;
+  }
+  
+  .rightbar .box-style3{
+    width:99.5%;
+    background-color:white;
+    border-radius: 3px;
+    margin-top:1%;
+  }
+  
+ /*up month dates style  */
+
+ .rightbar .box-style select{
+     background-color:white;
+     border: none;
+     font-size:0.9rem;
+     font-weight: 500;
+ }
+
+.today-btn-style{
+    font-size: 1rem;
+    font-weight: 510;
+    background-color: white;
+    padding: 2.5px 38px;
+    margin-left: 66px;
+    border: 1px solid #14bef0;
+    color: #14bef0;
+    border-radius: 5px;
+}
+
+.today-btn-style:hover{
+  
+    background-color: #14bef0;
+    
+    border: 1px solid #14bef0;
+    color: #ffffff;
+   
+}
+.carousel-inner p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.carousel-item{
+    margin-top: 5.5px;
+} 
+
+/* below time slot slider  */
+
+
+.rightbar .card {
+    width: 100%;
+}
+
+.rightbar .card .tab-content .tab-pane{
+    height:492px;
+    overflow-y: auto;
+    margin-bottom: 6px;
+}
+
+    
+.rightbar .card .card-header .nav a{
+    border: none;
+    margin-left:5px;
+    width: 90.5px;
+
+    text-align: center;
+    font-size: 15.5px;
+    text-decoration: none;
+    color:black;
+    border-radius:0%;
+    font-weight:600;
+}
+
+.rightbar .card .card-header .nav li .active{
+    height:100%;
+    width: 90.5px;
+    background:  #e0e0eb;
+    border-bottom:3px solid blue;
+    color:black;
+    font-weight:600;
+    font-size: 15.5px;
+}
+
+
+
+
+.tab-menu .tab h3{
+    color: blue;
+}
+
+
+/* left side time slots button */
+.prev-date1 {
+    top: 27px;
+    left: 8px;
+    width: 10px;
+    height: 4%;
+}
+.next-date1{
+    top: 27px;
+    height: 4%;
+    right:9px;
+    width:10px;
+}
+
+.c-day-session__header {
+    margin-top: 15px;
+}
+.c-day-session__header span{
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.right-card-style.c-day-session__slot, .sm .c-day-session__slot-bluebr-style {
+    width: 45%;
+    height: 46px;
+}
+
+
+
+.right-card-style .c-day-session__slot-bluebr-style {
+    /* width: 25%;
+    height: 46px; */
+    padding: 4px;
+    letter-spacing: normal;
+}
+
+
+.right-card-style .c-day-session__slot-bluebr-style  span {
+    font-size: 13px;
+    color: #14bef0;
+    border: 1px solid #14bef0;
+}
+.right-card-style .c-day-session__slot-bluebr-style  span:hover {
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #14bef0;
+    border: 1px solid #14bef0;
+}
+
+
+.right-card-style .c-day-session__slot-bluebr-style span, .c-day-session__slot-purple span, .c-day-session__slot-span {
+    width: 111px;
+    border-radius: 3px;
+    padding:8px 0;
+    margin-top:24px;
+    margin-left: 13px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right-card-style .c-day-session__slot-bluebr-style span:active{
+    background-color:#14bef0;
+    color: white;
+}
+.right-card-style .c-day-session__slot-bluebr-style a{
+    font-size:14;
+    margin-left: 2;
+    font-weight:0;
+    text-decoration: none;
+}
+.right-card-style .c-day-session__slot-bluebr-style a:active{
+  
+    color: black    ;
+}
+
+/*  */
+.dr-time-slots{
+    padding-left: 0 !important;
+}
+.dr-time-slots label{
+    margin-left:17px;
+}
+
+.dr-time-slots h6{
+    margin: 0PX 16PX;
+    padding-top:23px;
+}
+
+.apply-weeek-style input[type='checkbox']{
+    margin-left: 18px;
+   margin-top:24px;
+}
+
+.textbox-style{
+    width:62%;
+    padding:6.5px;
+    overflow-y: auto;
+    border: 1px solid #b4b4be;
+    border-radius:3px;
+    margin-top:25px;
+    line-height: 1.4;
+    outline: none;
+    background-color: #fff;
+    color: #414146;
+    font-size: 14px;
+    top: 1.7rem;
+
+}
+
+.textbox-style1{
+    width:31%;
+    padding:6.5px;
+    border: 1px solid #b4b4be;
+    border-radius:3px;
+    margin-top:15px;
+    line-height: 1.4;
+    outline: none;
+    background-color: #fff;
+    color: #414146;
+    font-size: 14px;
+    top: 1.7rem;
+
+}
+
+
+.close-btn-style{
+    background-color:white;
+    font-size: 0.8rem;
+    margin-left:75px;
+    padding:2.5% 10%;
+    border: 1px solid #14bef0;
+    color: #14bef0;
+    font-weight:550;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top:30px;
+}
+
+
+.close-btn-style:hover{
+    border: 1px solid #14bef0;
+    background-color: #14bef0;
+    color:white;
+    letter-spacing: 1px;
+    font-weight:550;
+}
+
+.done-btn-style{
+    background-color:white;
+    letter-spacing: 1px;
+    margin-left:20px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    padding:2.3% 10%;
+    border: 1px solid #14bef0;
+    background-color: #14bef0;
+    color:white;
+    font-weight:550;
+    border-radius: 5px;
+    margin-top:30px;
+}
+
+.days-style{
+    margin-left: 18px;
+}
+.days-style label:active{
+    background-color: #b4b4be;
+}
+.days-style input[type="checkbox"]{
+    width:29px;
+    cursor: pointer;
+    background-color: #14bef0;
+    
+}

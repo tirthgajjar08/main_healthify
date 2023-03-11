@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  
+
+    <title>Healthify Drive</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/doctor_css/doc-manage_schedule.css" rel="stylesheet">
+    <link href="../../css/doctor_css/doc-use-common-style.css" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/849b321cb3.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+  
+  </head>
+
+  <body>
+
+      <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0" >
+        <a class="navbar-brand col-sm-3 col" href="#" style="margin-left:0;color: darkblue;">HEALTHIFY</a>
+
+        
+          <!-- <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#" style="color: black; font-weight: 500;">Log out  <i class="fas fa-sign-out-alt ml-1"></i></a>
+          </li> -->
+          
+          <div class="dropdown my-acc-style">
+            <button class="account-btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user mr-2" style="font-size:17px;"></i>My Account
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-doctor  mr-2" ></i>Doctor</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user mr-2"></i>Patient</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a></li>
+            </ul>
+          </div>
+      
+        <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+      
+      </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+      
+
+        <nav class="col-md-2 d-none d-md-block sidebar" >
+
+              <div class="main-user-detail">
+                <img src="../../images/user panel/default.jpg" alt="User image">
+          <h5>Tirth gajjar <a href="edit-profile.html" style="color: black;font-size:13px; "><i class="far fa-edit"></i></a></h5>
+                
+              </div>
+
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="upcoming_app.html">
+                      <i class="fa-solid fa-dna mr-2"  style="font-size:14px; "></i>Upcoming Appointment 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="com_app.html">
+                     
+                      <i class="fa-solid fa-hand-holding-medical mr-2" style="font-size:14px; "></i>Complete Appointment 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="manage_schedule.html">
+                      <i class="fas fa-calendar-check mr-2" style="font-size:14px; "></i>Manage Schedule
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="medical_record.html">
+                      <i class="fa-solid fa-file-medical mr-2" style="font-size:14px; "></i>
+                      Medical Records 
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="fas fa-vial"></i>
+                      Lab test 
+                    </a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">
+                      <i class="fas fa-thumbs-up mr-2" style="font-size:14px; "></i>Feedback
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">
+                      <i class="far fa-credit-card mr-2" style="font-size:14px; "></i>Payment
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="edit-profile.html">
+                      <i class="fas fa-user-edit mr-2" style="font-size:14px; "></i>
+                      Edit Profile
+                    </a>
+                  </li>
+                  
+                </ul>
+
+               
+               
+              </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-4 px-4 rightbar right-card-style ">
+          <div class="box-style">
+            <div class="row ">
+              <div class="col-md-3">
+            <div id="carouselExampleIndicators"  class="carousel slide"  data-ride="false">
+             
+              <div class="carousel-inner mt-2">
+                  <div class="carousel-item active">
+                  <p>February,2022</p>
+                  </div>
+                  <div class="carousel-item">
+                  <p>March,2022</p>
+                  </div>
+
+                  <div class="carousel-item">
+                   <p>Apr,2022</p>
+                  </div>
+
+                </div>
+              
+
+                <a class="carousel-control-prev prev-date" href="#carouselExampleIndicators" role="button"
+                    data-slide="prev" style="top: -9px;">
+                    <img src="../../images/doc-det/icons8-back-30.png" style="height:34%;">
+                  </a>
+                  <a class="carousel-control-next next-date" href="#carouselExampleIndicators" role="button"
+                    data-slide="next" style="top: -9px;">
+                    <img src="../../images/doc-det/icons8-forward-30.png" style="height:34%;">
+                  </a>
+              
+            </div>
+            
+              
+              
+            </div>
+            <div class="col-md-5">
+              
+
+              <select class="form-select ml-5 mr-5 mt-3 mb-3" aria-label="Default select example">
+                <option selected>Select Mode</option>
+                <option value="1">Online </option>
+                <option value="2">Offline</option>
+              
+              </select>
+              <select class="form-select ml-3 mt-3 mb-3" aria-label="Default select example">
+                <option selected>Select Duration</option>
+                <option value="1">15 Min</option>
+                <option value="2">20 Min</option>
+              
+              </select>
+            </div>
+
+            <div class="col-md-3 ml-5">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               
+                <div class="carousel-inner mt-2">
+                    <div class="carousel-item active">
+                      <button class="today-btn-style">Today</button>
+                    </div>
+                  
+  
+                   
+  
+                  </div>
+                
+  
+                
+              </div>
+              
+                
+                
+              </div>
+
+          </div>
+
+            </div><!-- month and online-offline end -->
+        
+          <div class="row ">
+              <div class="col-md-8 mt-1">
+
+                
+                <div id="carouselExampleControls" class="carousel slide"  data-ride="false">
+
+                  <div class="carousel-inner slots_carousel-inner">
+                    <div class="carousel-item active">
+
+                         <div class="box-style">
+                         <div class="card tab-card">
+                        <div class="card-header tab-card-header" style="padding: 2px 26px;height: 44px;">
+                          <ul class="nav nav-tabs card-header-tabs " id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab"
+                                aria-controls="One" aria-selected="true">Sun, 7
+                               
+                              </a>
+
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab"
+                                aria-controls="Two" aria-selected="false">Mon, 8
+
+                               
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab"
+                                aria-controls="Three" aria-selected="false">Tue, 9
+                              
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab"
+                                  aria-controls="four" aria-selected="false">Wed, 10
+                                
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab"
+                                  aria-controls="five" aria-selected="false">Thu, 11
+                                
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="six-tab" data-toggle="tab" href="#six" role="tab"
+                                  aria-controls="six" aria-selected="false">Fri, 12
+                                
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="seven-tab" data-toggle="tab" href="#seven" role="tab"
+                                  aria-controls="seven" aria-selected="false">Sat, 13
+                                
+                                </a>
+                              </li>
+                          </ul>
+                        </div>
+
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                           
+
+                              <div class="c-day-session__slot-bluebr-style ">
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                        
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+                            <div class="c-day-session__header">
+                                <span>Evening</span>
+                              </span><span>(6 slots)</span>
+                            </div>
+
+                            <!-- <div class="c-day-session__body btn-inline-3"> -->
+
+                              <div class="c-day-session__slot-bluebr-style ">
+
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                               
+
+                              </div>
+                              <div class="c-day-session__header">
+                                <span>Evening</span>
+                              </span><span>(6 slots)</span>
+                            </div>
+                            <div class="c-day-session__slot-bluebr-style ">
+
+                              <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                              <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                             
+                                                         
+
+                            </div>
+
+
+                            <!-- </div> -->
+
+
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a>        -->
+                          </div>
+                          <div class="tab-pane fade p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                            <div>
+                              <div class="c-day-session__header">
+
+                               
+                                  <span>Morning</span>
+                                <span>(6 slots)</span>
+                              </div>
+
+
+                                <div class="c-day-session__slot-bluebr-style ">
+                                  <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                </div>
+
+                                <div class="c-day-session__header">
+
+                               
+                                  <span>Evening</span>
+                                <span>(6 slots)</span>
+                              </div>
+
+
+                                <div class="c-day-session__slot-bluebr-style ">
+                                  <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                                  <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                                </div>
+
+                                
+
+
+                              
+
+                            </div>
+                          </div>
+                          <!-- tab-3 -->
+                          <div class="tab-pane fade show  p-3" id="four" role="tabpanel" aria-labelledby="four-tab">
+                            
+                          </div>
+
+                          <div class="tab-pane fade show p-3" id="five" role="tabpanel" aria-labelledby="five-tab">
+                            5
+                        </div>
+
+                        <div class="tab-pane fade show p-3" id="six" role="tabpanel" aria-labelledby="six-tab">
+                            6
+                        </div>
+                        <div class="tab-pane fade show p-3" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                            7
+                        </div>
+
+                        </div>
+                      </div>
+               
+            </div>
+            </div>
+
+            <!-- 2ND tab -->
+            <div class="carousel-item">
+
+              <div class="box-style">
+              <div class="card tab-card">
+             <div class="card-header tab-card-header" style="padding: 2px 26px;height: 44px;">
+               <ul class="nav nav-tabs card-header-tabs " id="myTab" role="tablist">
+                 <li class="nav-item">
+                   <a class="nav-link active" id="eight-tab" data-toggle="tab" href="#eight" role="tab"
+                     aria-controls="eight" aria-selected="true">Sun, 7
+                    
+                   </a>
+
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" id="nine-tab" data-toggle="tab" href="#nine" role="tab"
+                     aria-controls="nine" aria-selected="false">Mon, 8
+
+                    
+                   </a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" id="ten-tab" data-toggle="tab" href="#ten" role="tab"
+                     aria-controls="Ten" aria-selected="false">Tue, 9
+                   
+                   </a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" id="eleven-tab" data-toggle="tab" href="#eleven" role="tab"
+                       aria-controls="eleven" aria-selected="false">Wed, 10
+                     
+                     </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" id="twelve-tab" data-toggle="tab" href="#twelve" role="tab"
+                       aria-controls="twelve" aria-selected="false">Thu, 11
+                     
+                     </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" id="thirteen-tab" data-toggle="tab" href="#thirteen" role="tab"
+                       aria-controls="thirteen" aria-selected="false">Fri, 12
+                     
+                     </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" id="fourteen-tab" data-toggle="tab" href="#fourteen" role="tab"
+                       aria-controls="fourteen" aria-selected="false">Sat, 13
+                     
+                     </a>
+                   </li>
+               </ul>
+             </div>
+
+             <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade show active p-3" id="eight" role="tabpanel" aria-labelledby="eight-tab">
+                
+
+                   <div class="c-day-session__slot-bluebr-style ">
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+             
+                 </div>
+               </div>
+
+               <div class="tab-pane fade p-3" id="nine" role="tabpanel" aria-labelledby="nine-tab">
+
+                 <div class="c-day-session__header">
+                     <span>Evening</span>
+                   </span><span>(6 slots)</span>
+                 </div>
+
+                 <!-- <div class="c-day-session__body btn-inline-3"> -->
+
+                   <div class="c-day-session__slot-bluebr-style ">
+
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                     <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                    
+
+                   </div>
+                   <div class="c-day-session__header">
+                     <span>Evening</span>
+                   </span><span>(6 slots)</span>
+                 </div>
+                 <div class="c-day-session__slot-bluebr-style ">
+
+                   <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                   <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                  
+                                              
+
+                 </div>
+
+
+                 <!-- </div> -->
+
+
+                 <!-- <a href="#" class="btn btn-primary">Go somewhere</a>        -->
+               </div>
+               <div class="tab-pane fade p-3" id="ten" role="tabpanel" aria-labelledby="ten-tab">
+                 <div>
+                   <div class="c-day-session__header">
+
+                    
+                       <span>Morning</span>
+                     <span>(6 slots)</span>
+                   </div>
+
+
+                     <div class="c-day-session__slot-bluebr-style ">
+                       <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     </div>
+
+                     <div class="c-day-session__header">
+
+                    
+                       <span>Evening</span>
+                     <span>(6 slots)</span>
+                   </div>
+
+
+                     <div class="c-day-session__slot-bluebr-style ">
+                       <a href="patient-appointment.html"><span>01:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+                       <a href="patient-appointment.html"><span>11:00 PM</span></a>
+
+                     </div>
+
+                     
+
+
+                   
+
+                 </div>
+               </div>
+               <!-- tab-3 -->
+               <div class="tab-pane fade show  p-3" id="eleven" role="tabpanel" aria-labelledby="eleven-tab">
+                 4
+               </div>
+
+               <div class="tab-pane fade show p-3" id="twelve" role="tabpanel" aria-labelledby="twelve-tab">
+                 5
+             </div>
+
+             <div class="tab-pane fade show p-3" id="thirteen" role="tabpanel" aria-labelledby="thirteen-tab">
+                 6
+             </div>
+             <div class="tab-pane fade show p-3" id="fourteen" role="tabpanel" aria-labelledby="fourteen-tab">
+                 7
+             </div>
+
+             </div>
+           </div>
+    
+ </div>
+ </div>
+
+
+
+            </div>
+
+            <a class="carousel-control-prev prev-date1" href="#carouselExampleControls" role="button"
+                    data-slide="prev">
+                    <img src="../../images/doc-det/icons8-back-30.png" style="height:95%;">
+                  </a>
+                  <a class="carousel-control-next next-date1" href="#carouselExampleControls" role="button"
+                    data-slide="next">
+                    <img src="../../images/doc-det/icons8-forward-30.png" style="height: 95%;">
+                  </a>
+            </div>
+            <!-- End box-style -->
+        </div><!-- End col-md-9 -->
+
+              <div class="col-md-4" style="margin-top: 13px;">
+                <div class="box-style3 dr-time-slots">
+                   <h6>Create time slots</h6>
+                   <form action="">
+
+                     <div>
+
+                      <label>Starting Time :</label>
+                      <select class="form-select textbox-style"  aria-label="Default select example">
+                        <option selected>Select Starting Time</option>
+                        <option>tirth </option>
+                        
+                      
+                      </select>
+                    <!-- 
+
+                    <input type="time" id="dob" class="textbox-style"> -->
+                  </div>
+
+                  <div class="ending-tym">
+
+                    <label class="mr-1">Ending Time :</label>
+                    <select class="form-select textbox-style"  aria-label="Default select example">
+                      <option selected>Select Ending Time</option>
+                      <option>tirth </option>
+                      <option>Offline</option>
+                    
+                    </select>
+                    <!-- <input type="time" id="dob" class="textbox-style">   -->
+                    
+                  </div>
+
+                  <h6>Break Time-1</h6>
+                  <div>
+                    <label>From : </label>
+                    <select class="form-select textbox-style1"  aria-label="Default select example">
+                      <option selected>From</option>
+                      <option>tirth </option>
+                      <option>Offline</option>
+                    
+                    </select>
+                    <!-- <input type="time" id="dob" class="textbox-style1"> -->
+                    
+                    <label>To : </label>
+                    <select class="form-select textbox-style1"  aria-label="Default select example">
+                      <option selected>To</option>
+                      <option>tirth </option>
+                      <option>Offline</option>
+                    
+                    </select>
+                    <!-- <input type="time" id="dob" class="textbox-style1"> -->
+                  </div>
+
+                  <h6>Break Time-2</h6>
+                  <div>
+                    <label>From : </label>
+                    <select class="form-select textbox-style1"  aria-label="Default select example">
+                      <option selected>To</option>
+                      <option>tirth </option>
+                      <option>Offline</option>
+                    
+                    </select>
+                    <!-- <input type="time" id="dob" class="textbox-style1"> -->
+                    <label>To : </label>
+                    <select class="form-select textbox-style1"  aria-label="Default select example">
+                      <option selected>To</option>
+                      <option>tirth </option>
+                      <option>Offline</option>
+                    
+                    </select>
+                    <!-- <input type="time" id="dob" class="textbox-style1"> -->
+                  </div>
+
+                  <div>
+
+                    <div>
+
+                      <label class="" style="margin-right: 35px;">Repeat   :</label>
+                      <select class="form-select textbox-style"  aria-label="Default select example">
+                        <option selected>None</option>
+                        <option>Everyday </option>
+                        <option>EveryWeek</option>
+                      
+                      </select>
+                      <!-- <input type="time" id="dob" class="textbox-style">   -->
+                      
+                    </div>
+
+                    <div class="days-style mt-4">
+                     
+                      <input type="checkbox">S
+                        <input type="checkbox">M
+                        <input type="checkbox">T
+                        <input type="checkbox">W
+                        <input type="checkbox">T
+                          <input type="checkbox">F
+                         
+                            <input type="checkbox">S
+                      
+                    </div>
+
+                
+
+                    <button type="button" class="close-btn-style" data-dismiss="modal">Close</button>
+                        <button type="submit" class="done-btn-style" onclick="medicalReport()">Apply</button>
+                  </div>
+
+                   </form>
+                   
+                        
+                    </p>
+                </div>
+                 <!-- End box-style -->
+          </div><!-- col-md-3 -->
+          
+
+          
+        </main>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+      
+<script src="../../js/doctor_js/doc-manage_schedule.js"></script>
+
+
+  </body>
+</html>
